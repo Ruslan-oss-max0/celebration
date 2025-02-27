@@ -23,7 +23,7 @@ function showHill() {
 
     setTimeout(() => {
         let flowerEmojis = ['🌸', '🌺', '🌻', '🌼', '🌷'];
-        for (let i = 0; i < 100; i++) { // Increase number of flowers for wide screens
+        for (let i = 0; i < 15; i++) { // Increase number of flowers for wide screens
             let flower = document.createElement('div');
             flower.className = 'flower';
             flower.innerHTML = flowerEmojis[Math.floor(Math.random() * flowerEmojis.length)];
