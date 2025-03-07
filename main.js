@@ -24,6 +24,16 @@ function startCelebration() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("celebrate-btn");
+  button.addEventListener("click", () => {
+    button.style.display = "none"; // Hides the button permanently
+    showHill();
+    startCelebration();
+    document.getElementById("hidden-message").style.opacity = "1";
+  });
+});
+
 function showHill() {
   document.getElementById("message").style.opacity = "1";
 
